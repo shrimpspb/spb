@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    body{
+        margin: 0;
+        font-family: 'century gothic', normal;
+        background-color: #1a0f0a;
+        color: #fff;
+    }
+    .container-fuild{
+        height: 100vh;
+        overflow-x: hidden;
+        perspective: 20px;
+    }
+    .banner{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transform-style: preserve-3d;
+background-color: black;
+    }
+    .bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(imagess/spb23.jpg);
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(-10px) scale(1.);
+		
+    }
+    .bg::before{
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        content: '';
+        background-image: linear-gradient(
+            to top, #1a0f0a 0%, transparent
+        );
+        bottom: 0%;
+    }
+    .content{
+        font-size: xxx-large;
+        transform: translateZ(8px);
+		
+    }
+    header{
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 1200px;
+        max-width: 100%;
+        padding: 40px 0;
+    }
+    header .signin{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    header button{
+        background-color: ##1a0f0a;
+        color: ##1a0f0a;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: end;
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    .library{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 100px);
+        margin-top: 100px;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .des{
+        width: 70%;
+        text-align: center;
+        margin: 100px auto;
+        transition: 0.5s;
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    .library.active .item{
+        opacity: 1;
+    }
+    .des.active{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+.item img{
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+	text-align:center;
+	margin-bottom: 60px;
+	
+}
+.item{
+width:100%;}
+p{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+h1{
+	font-size: 15px;
+	 font-weight: 100;
+	font-family: century gothic;
+	font-style: normal;
+	color: white;
+	padding: 0px;
+	padding-left: 400px;
+	padding-right: 400px;
+	line-height: 20px;
+}
+h2{
+	font-size: 10px;
+	 font-weight: 100;
+	font-family: century gothic;
+	font-style: normal;
+	color: white;
+	padding: 0px;
+	padding-bottom: 0px;
+	padding-left: 400px;
+	padding-right: 400px;
+	line-height: 20px;
+	margin-bottom:0px;
+	margin-top:0px;
+	
+}
+h3{
+	font-size: 20px;
+	font-weight: 100;
+	font-family: century gothic;
+	font-style: normal;
+	color: white;
+	padding: 0px;
+	padding-left: 400px;
+	padding-right: 400px;
+	line-height: 20px;
+	padding-top:55px;
+	margin-top:0px;
+	
+}
+h4{
+	font-size: 20px;
+	 font-weight: 100;
+	font-family: century gothic;
+	font-style: normal;
+	color: white;
+	padding: 0px;
+	padding-left: 400px;
+	padding-right: 400px;
+	line-height: 20px;
+	padding-bottom:5px;
+	margin:0px;
+	
+}
+h5{
+	font-size: 10px;
+	 font-weight: 200;
+	font-family: century gothic;
+	font-style: normal;
+	color: white;
+	padding: 0px;
+	padding-bottom: 1px;
+	padding-left: 400px;
+	padding-right: 400px;
+	line-height: 20px;
+	
+}
+h6{
+	font-size: 15px;
+	 font-weight: 100;
+	font-family: century gothic;
+	font-style: normal;
+	color: white;
+	padding-left: 400px;
+	padding-right: 400px;
+	line-height: 20px;
+	margin-top:15px;
+	margin-bottom:20px;
+}
+em{
+		font-size: 10px;
+	 font-weight: 100;
+	font-family: century gothic;
+	font-style: normal;
+	color: white;
+	padding: 0px;
+	padding-bottom: 0px;
+	padding-left: 400px;
+	padding-right: 400px;
+	line-height: 20px;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+#toTop{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url(img/totop.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 0 #c9c90a;
+    transition: transform 0.3s, box-shadow 0.3s ;
+}
+#toTop:active{
+    transform: translateY(10px);
+    box-shadow: none;
+}
+	
